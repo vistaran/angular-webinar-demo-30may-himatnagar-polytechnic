@@ -1,0 +1,20 @@
+<h3>
+  Employees List
+</h3>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <th>ID</th>
+    <th>employee name</th>
+    <th>employee salary</th>
+    <th>employee age</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of employess_list">
+      <td>{{ item.id }}</td>
+      <td>{{ item.employee_name }}</td>
+      <td>{{ item.employee_salary }}</td>
+      <td>{{ item.employee_age }}</td>
+    </tr>
+  </tbody>
+</table>
